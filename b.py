@@ -1,0 +1,6 @@
+name = str(input("name: "))
+age = int(input("age: "))
+country = str(input("country: "))
+print("Your name is",name)
+print("Your age is",age)
+print("Your country name is",country)
