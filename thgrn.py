@@ -7,5 +7,13 @@ if n1 > n2:
     print('The largest number is the first one.')
   elif n1 == n3:
     print('The largest numbers are the first and third ones.')
-if n1 > n3:
-  pass
+elif n1 > n3:
+  if n1 == n2:
+    print('The largest numbers are the first and second ones.')
+  if n1 > n2:
+    print('The largest number is the first one.')
+elif n1 == n2:
+    if n1 > n3:
+    print('The largest numbers are the first and second ones.')
+  elif n1 == n3:
+    print('Every number is equal.')
