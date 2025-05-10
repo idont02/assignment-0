@@ -12,3 +12,5 @@ for i in range(l):
   a=a//10
 if c == r:
   print('It is a palindrome.')
+else:
+  print('It is NOT a palindrome.')
