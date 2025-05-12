@@ -10,10 +10,10 @@ def checkint():
     finally:
       input('Press ENTER to proceed.')
 def main(r):
-  while True:
-    print('Pick a number between 1 -',r2)
-    checkint()
-        input('Press ENTER to proceed.')
+   while True:
+      print('Pick a number between 1 -',r2)
+      checkint()
+      input('Press ENTER to proceed.')
     lot = randint(1,r2)
     if n == lot:
       print('That is a lottery! You win!')
