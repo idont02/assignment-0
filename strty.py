@@ -1,12 +1,14 @@
+up = lo = dg = sp = 0
 print('Type anything: ')
-st = str(input()
+st = input()
 for i in st:
-  if st[i].isupper():
+  if i.isupper():
     up+=1
-  elif st[i].islower():
+  elif i.islower():
     lo+=1
-  elif st[i].isdigit():
+  elif i.isdigit():
     dg+=1
   else:
     sp+=1
 print('\nUppercase letters:',up,'\nLowercase letters:',lo,'\nNumbers/digits:',dg,'\nSpecial characters:',sp)
+
