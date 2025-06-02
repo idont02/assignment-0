@@ -1,0 +1,18 @@
+import os
+print('Nested tuple:')
+a = input('Type anything: ')
+b = input('Type anything: ')
+c = input('Type anything: ')
+d = input('Type anything: ')
+e = input('Type anything: ')
+f = input('Type anything: ')
+g = input('Type anything: ')
+h = input('Type anything: ')
+i = input('Type anything: ')
+j = input('Type anything: ')
+k = input('Type anything: ')
+l = input('Type anything: ')
+nestTuple = ((a,b,c),(d,e,f),(g,h,i),(j,k,l))
+os.system('cls')
+
+print(f'{nestTuple}\n\nSum of all elements in tuple: {a+b+c+d+e+f+g+h+i+j+k+l}.\nThere are {len(nestTuple)} elements in the tuple.')
