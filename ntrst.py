@@ -13,8 +13,11 @@ from os import system as s
 def cls():
     s('cls')
 
+cls()
 print('Please note that the variable TIME is acceptable only in YEARS. You may enter a decimal.')
 p(2)
+cls()
+
 while True:
     while True:
         while True:
