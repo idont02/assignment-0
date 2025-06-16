@@ -14,7 +14,7 @@ def cls():
     s('cls')
 
 print('Please note that the variable TIME is acceptable only in YEARS. You may enter a decimal.')
-p()
+p(2)
 while True:
     while True:
         while True:
