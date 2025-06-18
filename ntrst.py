@@ -13,6 +13,7 @@ from os import system as s
 def cls():
     s('cls')
 
+#####################
 cls()
 print('Please note that the variable TIME is acceptable only in YEARS. You may enter a decimal.')
 p(2)
@@ -36,35 +37,15 @@ while True:
         cls()
         print('SIMPLE INTEREST\n\nThe formula of simple interest is I = Prt\nI = interest\nP = principal\nr = rate\nt = time\n\n\nCALCULATE SIMPLE INTEREST\n')
         
-        while True:
-            p = input('Enter the principal: ')
-            input()
 
-            if not p.isdigit():
-                print('Not a number.')
-                cls()
+        pr = input('Enter the principal: ')
 
-            else:
-                while True:
-                    r = input('Enter the rate of interest (per year): ')
-                    if not r.isdigit():
-                        print('Not a number.')
-                        cls()
+        r = input('Enter the rate of interest (per year): ')
 
-                    else:
-                        while True:
-                            t = input('Enter the time (in years): ')
-                            if not t.isdigit():
-                                print('Not a number.')
-                                cls()
-
-                            else:
-                                break
-                        break
-                break
+        t = input('Enter the time (in years): ')
 
         cls()
-        print(f'Principal = {p}\nRate = {r}\nTime = {t}\n\nThe simple interest is prt = {p*r*t}.')
+        print(f'Principal = {p}\nRate = {r}\nTime = {t}\n\nThe simple interest is prt = {pr*r*t}.')
         break
 
 
@@ -72,42 +53,14 @@ while True:
 
         cls()
         print('COMPOUND INTEREST\n\nThe formula of simple interest is A = P(1+(r/n))^nt\nA = total amount\nP = principal\nr = rate\nn = number of times interest is compounded, per t unit\nt = time\n\n\nCALCULATE COMPOUND INTEREST (variable A)\n')
-        while True:
-            p = input('Enter the principal: ')
-            input()
 
-            if not p.isdigit():
-                print('Not a number.')
-                cls()
+        pr = float(input('Enter the principal: '))
+        r = float(input('Enter the rate of interest (per year): '))
+        t = float(input('Enter the time (in years): '))
 
-            else:
-                while True:
-                    r = input('Enter the rate of interest (per year): ')
-                    if not r.isdigit():
-                        print('Not a number.')
-                        cls()
+        n = float(input('Enter the number of times interest is compounded per year: '))
 
-                    else:
-                        while True:
-                            t = input('Enter the time (in years): ')
-                            if not t.isdigit():
-                                print('Not a number.')
-                                cls()
-
-                            else:
-                                while True:
-                                    n = input('Enter the number of times interest is compounded per year: ')
-                                    if not n.isdigit():
-                                        print('Not a number.')
-                                        cls()
-
-                                    else:
-                                        break
-                                break
-                        break
-                break
-
-        print(f'Principal = {p}\nRate = {r}\nTime = {t}\nNumber of times interest compounded = {n}\n\nThe simple interest is P(1+(r/n))^nt = {p*(1+(r/n))**n*t}.')
+        print(f'Principal = {p}\nRate = {r}\nTime = {t}\nNumber of times interest compounded = {n}\n\nThe simple interest is P(1+(r/n))^nt = {pr*(1+(r/n))**n*t}.')
         break
 
     else:
