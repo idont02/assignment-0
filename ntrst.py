@@ -40,7 +40,7 @@ while True:
 
         pr = input('Enter the principal: ')
 
-        r = input('Enter the rate of interest (per year): ')
+        r = input('Enter the rate of interest percentage (per year): ')
 
         t = input('Enter the time (in years): ')
 
@@ -55,7 +55,7 @@ while True:
         print('COMPOUND INTEREST\n\nThe formula of simple interest is A = P(1+(r/n))^nt\nA = total amount\nP = principal\nr = rate\nn = number of times interest is compounded, per t unit\nt = time\n\n\nCALCULATE COMPOUND INTEREST (variable A)\n')
 
         pr = float(input('Enter the principal: '))
-        r = float(input('Enter the rate of interest (per year): '))
+        r = float(input('Enter the rate of interest percentage (per year): '))
         t = float(input('Enter the time (in years): '))
 
         n = float(input('Enter the number of times interest is compounded per year: '))
