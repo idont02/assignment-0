@@ -39,4 +39,6 @@ for i in range(2):
     turtle.fd(b)
     turtle.right(90)
 turtle.end_fill()
+
+cl()
 Screen().mainloop()
