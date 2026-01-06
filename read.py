@@ -1,0 +1,6 @@
+yap = open('yapping.txt','r')
+print(yap.read())
+print(yap.readline())
+print(open('element.txt','r').readlines())
+commons = open('commonword.txt','w')
+print(commons.write('us\n\n100 most common words'))
